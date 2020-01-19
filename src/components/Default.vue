@@ -1,5 +1,5 @@
 <template>
-  <div class="default1">
+  <div class="default">
     <!--1. 自定义指令 -->
     <!-- <input type="text" v-focus> -->
     <!-- 2.自定义指令带参数 -->
@@ -62,7 +62,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.default1{
+.default{
   width: 100%;
   height: 100%;
 }
@@ -70,3 +70,4 @@ input{
   margin-left: 10px;
 }
 </style>
+
