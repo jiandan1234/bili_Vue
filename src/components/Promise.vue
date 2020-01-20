@@ -26,27 +26,27 @@
 
 // 2.基于promise处理ajax
 // 封装一个函数
-function queryData(url){
-  var p = new Promise(function(resolve,reject){
-    var xhr = new XMLHttpRequest();
-    // 指定回调函数
-    xhr.onreadystatechange =function(){
-      if(xhr.readyState !=4) return;
-      if(xhr.readyState = 4 && xhr.status==200){
-        // 处理正常的情况
-        resolve(xhr.responseText);
-      }else{
-        // 处理异常情况
-        reject("服务器错误")
-      }
-    };
-    xhr.open("get",url);
-    xhr.send(null);
-  });
-  return p;
-}
+// function queryData(url){
+//   var p = new Promise(function(resolve,reject){
+//     var xhr = new XMLHttpRequest();
+//     // 指定回调函数
+//     xhr.onreadystatechange =function(){
+//       if(xhr.readyState !=4) return;
+//       if(xhr.readyState = 4 && xhr.status==200){
+//         // 处理正常的情况
+//         resolve(xhr.responseText);
+//       }else{
+//         // 处理异常情况
+//         reject("服务器错误")
+//       }
+//     };
+//     xhr.open("get",url);
+//     xhr.send(null);
+//   });
+//   return p;
+// }
   // 调用
-  queryData("")
+  // queryData("")
 export default {
   name: "promise",
   data() {

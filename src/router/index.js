@@ -22,6 +22,11 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
+    // {
+    //   path: '/home',
+    //   name: 'HelloWorld',
+    //   component: Home
+    // }
 
     {
       path: "/home",
@@ -35,96 +40,97 @@ export default new Router({
         }
       ]
     },
-    {
-      path:"/zujian",
-      name: "Zujian",
-      component: Zujian,
-      children:[
-        {
-          path:"zujian2",
-          name:"Zujian2",
-          component: () => import("@/views/Zujian2")
-        },
-        {
-          path:"zujian3",
-          name:"Zujian2",
-          component:() => import ("@/views/Zujian3")
-        }
+    // {
+    //   path:"/zujian",
+    //   name: "Zujian",
+    //   component: Zujian,
+    //   children:[
+    //     {
+    //       path:"zujian2",
+    //       name:"Zujian2",
+    //       component: () => import("@/views/Zujian2")
+    //     },
+    //     {
+    //       path:"zujian3",
+    //       name:"Zujian2",
+    //       component:() => import ("@/views/Zujian3")
+    //     }
        
 
-      ]
-    },
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    },
-    {
-      path: "/tab",
-      name: "Tab",
-      component: Tab
+    //   ]
+    // },
+    
+    // {
+    //   path: "/tab",
+    //   name: "Tab",
+    //   component: Tab
 
-    },
+    // },
     {
       path: "/biaodan",
       name: "Biaodan",
       component: Biaodan
 
     },
-    {
-      path: "/default",
-      name: "Default",
-      component: Default
-    },
-    {
-      path: "/filter",
-      name: "Filter",
-      component: Filter
-    },
-    {
-      path: "/lifec",
-      name: "Lifec",
-      component: Lifec
-    },
-    {
-      path: "/tsdemo",
-      name: "Tsdemo",
-      component: Tsdemo
-    },
-    {
-      path: "/zujian",
-      name: "Zujian",
-      component: Zujian
-    },
     // {
-    //   path: "/zujian2",
-    //   name: "Zujian2",
-    //   component: Zujian2
+    //   path: "/default",
+    //   name: "Default",
+    //   component: Default
     // },
-    {
-      path: "/zujian3",
-      name: "Zujian3",
-      component: Zujian3
-    },
-    {
-      path: "/zujian4",
-      name: "Zujian4",
-      component: Zujian4
-    },
-    {
-      path: "/zujian5",
-      name: "Zujian5",
-      component: Zujian5
-    },
-    {
-      path: "/zujian6",
-      name: "Zujian6",
-      component: Zujian6
-    },
-    {
-      path: "/promise",
-      name: "Promise",
-      component:Promise
-    }
+    // {
+    //   path: "/filter",
+    //   name: "Filter",
+    //   component: Filter
+    // },
+    // {
+    //   path: "/lifec",
+    //   name: "Lifec",
+    //   component: Lifec
+    // },
+    // {
+    //   path: "/tsdemo",
+    //   name: "Tsdemo",
+    //   component: Tsdemo
+    // },
+    // {
+    //   path: "/zujian",
+    //   name: "Zujian",
+    //   component: Zujian
+    // },
+    // // {
+    // //   path: "/zujian2",
+    // //   name: "Zujian2",
+    // //   component: Zujian2
+    // // },
+    // {
+    //   path: "/zujian3",
+    //   name: "Zujian3",
+    //   component: Zujian3
+    // },
+    // {
+    //   path: "/zujian4",
+    //   name: "Zujian4",
+    //   component: Zujian4
+    // },
+    // {
+    //   path: "/zujian5",
+    //   name: "Zujian5",
+    //   component: Zujian5
+    // },
+    // {
+    //   path: "/zujian6",
+    //   name: "Zujian6",
+    //   component: Zujian6
+    // },
+    // {
+    //   path: "/promise",
+    //   name: "Promise",
+    //   component:Promise
+    // },
+    // {
+    //   path: "/lianxie",
+    //   name: "Lianxie",
+    //   component:Lianxie
+    // }
   ]
 })

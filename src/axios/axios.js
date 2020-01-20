@@ -1,4 +1,3 @@
-import vue from "vue"
 import axios from "axios"
 
 axios.defaults.headers.post["Content-Type"]="application/x-www-form-urlencoded"
@@ -10,12 +9,12 @@ axios.interceptors.request.use(function(config){
     return Promise.reject(error);
 })
 // 响应拦截器
-axios.interceptors.response.ues(function(response){
-    return response;
-},function(error){
-    return Promise.reject(error);
-}
-)
+// axios.interceptors.response.ues(function(response){
+//     return response;
+// },function(error){
+//     return Promise.reject(error);
+// }
+// )
 
 // 封装axios的post请求
 export function fetch(url,parms){

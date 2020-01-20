@@ -3,7 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import mock from "./mock"
+
+// 引入mock
+import "./mock/mock"
+import "./axios/axios"
+
+// 引入axios
+import axios from "axios"
+Vue.prototype.axios =axios;
 
 Vue.config.productionTip = false
 
