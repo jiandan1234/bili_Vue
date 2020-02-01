@@ -112,12 +112,7 @@ a {
 }
 .hello{
   width: 500px;
-
   height: 300px;
-  height: 300px;
-
-  height: 500px;
-
   border: 1px solid red;
 }
 </style>
