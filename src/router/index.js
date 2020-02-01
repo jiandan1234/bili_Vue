@@ -18,11 +18,12 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: Home
-    },
+    // {
+    //   path: '/home',
+    //   name: 'HelloWorld',
+    //   component: Home
+    // }
+
     {
       path: "/home",
       name: "Home",
@@ -35,6 +36,7 @@ export default new Router({
         }
       ]
     },
+
     {
       path:"/mock",
       name:"Mock",
@@ -55,44 +57,13 @@ export default new Router({
       // ]
     },
   
-    
-    // {
-    //   path: "/tab",
-    //   name: "Tab",
-    //   component: Tab
 
-    // },
-    {
-      path: "/biaodan",
-      name: "Biaodan",
-      component: Biaodan
-
-    },
-    // {
-    //   path: "/default",
-    //   name: "Default",
-    //   component: Default
-    // },
-    // {
-    //   path: "/filter",
-    //   name: "Filter",
-    //   component: Filter
-    // },
-    // {
-    //   path: "/lifec",
-    //   name: "Lifec",
-    //   component: Lifec
-    // },
-    // {
-    //   path: "/tsdemo",
-    //   name: "Tsdemo",
-    //   component: Tsdemo
-    // },
     {
       path: "/promise",
       name: "Promise",
       component:()=>import("@/Promise_demo/Promise")
     },
+
     // {
     //   path: "/lianxie",
     //   name: "Lianxie",

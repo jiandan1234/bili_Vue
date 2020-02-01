@@ -1,6 +1,9 @@
 <template>
   <div class="tsdemo">
+<<<<<<< HEAD
     <!-- 图书管理练习 -->
+=======
+>>>>>>> e1940c672022397aad25d253aa1899252ec9bc8a
     <!-- <div>
       <span>
         <input type="text" v-model="fname">

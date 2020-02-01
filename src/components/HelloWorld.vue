@@ -112,7 +112,11 @@ a {
 }
 .hello{
   width: 500px;
+<<<<<<< HEAD
   height: 300px;
+=======
+  height: 500px;
+>>>>>>> e1940c672022397aad25d253aa1899252ec9bc8a
   border: 1px solid red;
 }
 </style>
