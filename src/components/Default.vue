@@ -70,7 +70,3 @@ input{
   margin-left: 10px;
 }
 </style>
-<<<<<<< HEAD
-=======
-
->>>>>>> 9c0b5ac10680b2dcdc41bedd646409a57fc71e24
