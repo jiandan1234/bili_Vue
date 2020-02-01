@@ -25,11 +25,11 @@
 </template>
 
 <script>
-import zujian2 from "@/views/Zujian2"
-import zujian3 from "@/views/Zujian3"
-import zujian4 from "@/views/Zujian4"
-import zujian5 from "@/views/Zujian5"
-import zujian6 from "@/views/Zujian6"
+import zujian2 from "@/views/ZJ/Zujian2"
+import zujian3 from "@/views/ZJ/Zujian3"
+import zujian4 from "@/views/ZJ/Zujian4"
+import zujian5 from "@/views/ZJ/Zujian5"
+import zujian6 from "@/views/ZJ/Zujian6"
 import Vue from "vue";
 // Vue.component("button-counter",{
 //     data:function(){
