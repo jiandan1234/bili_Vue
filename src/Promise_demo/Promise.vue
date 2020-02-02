@@ -6,23 +6,26 @@
 
 <script>
 // 1.promise基本用法
+// console.log(typeof Promise)
 // console.dir(Promise);
-// var p = new Promise(function(resolve,reject){
-//   // 这里用于实现异步任务
-//   setTimeout(function(){
-//     var flag=true;
-//     if(flag){
-//       resolve("hello");
-//     }else{
-//       reject("出错了")
-//     }
-//   },100)
-// });
-// p.then(function(data){
-// console.log(data)
-// },function(info){
-//   console.log(info)
-// })
+var p = new Promise(function(resolve,reject){
+  // 这里用于实现异步任务
+  setTimeout(function(){
+    var flag=false;
+    if(flag){
+      // 正常情况
+      resolve("hello");
+    }else{
+      // 异常情况
+      reject("出错了")
+    }
+  },100)
+});
+p.then(function(data){
+console.log(data)
+},function(info){
+  console.log(info)
+})
 
 // 2.基于promise处理ajax
 // 封装一个函数
@@ -43,10 +46,11 @@ function queryData(url){
     xhr.open("get",url);
     xhr.send(null);
   });
+  // 返回实例对象
   return p;
 }
-  调用
-  queryData("")
+  queryData("http://localhost:8080/user")
+  .then()
 export default {
   name: "promise",
   data() {

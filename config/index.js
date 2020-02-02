@@ -10,7 +10,15 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/api': {
+        // 通过本地服务器将你的请求转发到这个地址(使用8080端口 代理 3000端口)
+        target: 'http://localhost:3001/',  
+        changeOrigin: false,  // 设置这个参数可以避免跨域
+        pathRewrite: {
+          '/api': '/'
+        }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
