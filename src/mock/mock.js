@@ -1,6 +1,9 @@
 const Mock = require("mockjs");//获取mockjs的插件
 //获取mock.Random对象
 const Random = Mock.Random;
+import produceData from "../mock/MockData/produceData" //可以参考https://blog.csdn.net/qq_35658349/article/details/97814371
+
+Mock.mock("/a","get", produceData)
 
 
 // 案例1
@@ -30,29 +33,32 @@ Mock.mock('http://localhost:8081/test/cityInfo', 'post', (data) => {
 
 
 // 案例2 https://www.jianshu.com/p/4444ab455936，在组件中用axios请求，不用单独将axios拿出来
-const produceData = function(opt){
-  console.log("opt",opt);
-  let articles = [];
-  for(let i = 0 ;i< 10;i++){
-    let newArticleObject = {
-      title:Random.csentence(5,30),
-      thumbnail_pic_s:Random.dataImage("300*250","mock的图片"),
-      author_name:Random.cname(),
-      date:Random.date(),
-      email:Random.email(),
-      name:Random.cname()
-    }
-    articles.push(newArticleObject)
-  }
-  return{
-    data:articles
-  }
-}
-// Mock.mock( url, post/get , 返回的数据)；
-Mock.mock("/user",/post|get/i, produceData )
+// const produceData = function(opt){
+//   console.log("opt",opt);
+//   let articles = [];
+//   for(let i = 0 ;i< 10;i++){
+//     let newArticleObject = {
+//       title:Random.csentence(5,30),
+//       thumbnail_pic_s:Random.dataImage("300*250","mock的图片"),
+//       author_name:Random.cname(),
+//       date:Random.date(),
+//       email:Random.email(),
+//       name:Random.cname()
+//     }
+//     articles.push(newArticleObject)
+//   }
+//   return{
+//     data:articles
+//   }
+// }
+// // Mock.mock( url, post/get , 返回的数据)；
+// Mock.mock("/a",/post|get/i, produceData )
 
 
+// const a1 = function(obj){
+//   console.log("obj",obj);
 
+// }
 
 
 

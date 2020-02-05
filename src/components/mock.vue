@@ -25,12 +25,13 @@ export default {
   },
   mounted:function(){
     this.getAlldata();
+    this.getexpress();
   },
   methods: {
     getAlldata(){
       console.log("nihaoma");
       let that = this;
-      this.axios.get("/user")
+      this.axios.get("/a")
       .then(function(res){
         console.log("连接成功");
         that.data = res.data.data
@@ -38,6 +39,14 @@ export default {
       .catch(function(error){
         console.log("连接错误"+error)
       });
+    },
+    getexpress(){
+      this.axios.get("/api/data").then((data)=>{
+        console.log(data)
+      })
+      .catch((data)=>{
+        console.log("express 连接失败")
+      })
     }
   
   },

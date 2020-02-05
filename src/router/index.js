@@ -47,7 +47,25 @@ export default new Router({
     {
       path: "/promise",
       name: "Promise",
-      component:()=>import("@/Promise_demo/Promise")
+      component:()=>import("@/Promise_demo/Promise"),
+      children:[
+        {
+          path:"/promise2",
+          name:"Promise2",
+          component:()=>import("@/Promise_demo/Promise2")
+        },
+        {
+          path:"/promise3",
+          name:"Promise3",
+          component:()=>import("@/Promise_demo/Promise3")
+        }
+
+      ]
+    },
+    {
+      path:"/fetch",
+      name:"Fetch",
+      component:()=>import("@/Promise_demo/Fetch")
     },
     {
       path:"/book",
