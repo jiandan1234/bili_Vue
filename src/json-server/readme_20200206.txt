@@ -1,0 +1,2 @@
+1.可以单独访问db.json,在package.json   script:"json-server --watch --db.json"
+2.也可以单独访问：nodemon  server.js
