@@ -31,7 +31,7 @@ export default {
     getAlldata(){
       console.log("nihaoma");
       let that = this;
-      this.axios.get("/a")
+      this.axios.get("/user/login")
       .then(function(res){
         console.log("连接成功");
         that.data = res.data.data
